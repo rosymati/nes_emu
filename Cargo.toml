@@ -1,0 +1,15 @@
+[package]
+name = "nes_emu"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+lto = true
+codegen-units = 1
+strip = true
+
+[dependencies]
+bitflags = "2.6.0"
+lazy_static = "1.5.0"
+rand = "0.8.5"
+sdl2 = "0.37.0"
