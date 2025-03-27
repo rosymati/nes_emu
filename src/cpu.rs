@@ -92,7 +92,7 @@ pub trait Mem {
 }
 
 impl CPU {
-    pub fn new(bus: Bus,) -> Self {
+    pub fn new(bus: Bus) -> Self {
         CPU {
             register_a: 0,
             register_x: 0,

@@ -5,14 +5,14 @@ pub mod opcodes;
 
 use bus::Bus;
 use car::Rom;
-use cpu::{Mem, CPU};
+use cpu::{CPU, Mem};
 
 use rand::Rng;
 use sdl2::{
+    EventPump,
     event::Event,
     keyboard::Keycode,
     pixels::{Color, PixelFormatEnum},
-    EventPump,
 };
 
 #[macro_use]
